@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500,800&display=swap"
       rel="stylesheet"
     />
 
@@ -17,26 +17,88 @@
         height: 100vh;
         font-family: "Inter", sans-serif;
       }
-
+      h2,
+      h3 {
+        margin: 0;
+      }
+      h1 {
+        font-size: 8vw;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 3px #fff,
+          0 0 6px rgb(216, 165, 216), 0 0 30px rgb(191, 150, 245),
+          0 0 60px rgb(158, 101, 223), 0 0 100px rgb(127, 8, 196),
+          0 0 120px rgb(133, 4, 207);
+      }
+      h2 {
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 2em;
+        text-align: center;
+      }
       body {
-        background: black
-          url("https://images.unsplash.com/photo-1645088520336-62d94324e869?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80");
+        background-color: black;
         color: white;
-        display: flex;
         align-items: center;
         justify-content: center;
+        overflow: scroll;
       }
 
-      header {
+      p {
+        font-size: 1.3em;
+      }
+      .header {
+        display: block;
         padding: 2rem;
+        border-bottom: 3px solid white;
+        padding-bottom: 5%;
+      }
+      .about {
+        padding-top: 5%;
+        display: block;
+        top: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .sponsor {
+        padding-top: 5%;
+        border-top: 3px solid white;
+        margin-top: 30px;
+        padding-bottom: 60px;
       }
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>Northwestern Wildhacks 2022</h1>
-      <h2>May 28-29, 2022</h2>
-    </header>
+    <div class="header">
+      <h1>NORTHWESTERN WILDHACKS 2022</h1>
+      <h3>Saturday & Sunday, May 28-29</h3>
+    </div>
+    <div class="about">
+      <h2>ABOUT US</h2>
+      <p>
+        WildHacks is Northwestern’s 24-hour Hackathon taking place in-person
+        from Saturday, May 28 to Sunday, May 29 2022. As Northwestern’s largest
+        hackathon, WildHacks is an opportunity for students to learn programming
+        skills and develop a final project in a collaborative and inclusive
+        environment.
+      </p>
+      <p>
+        Through workshops, mentorship, and prizes, WildHacks aims to be an
+        inclusive event that welcomes students of all skill levels, majors, and
+        backgrounds.
+        <em> Official registration will be released April 6th!</em>
+      </p>
+      <br />
+    </div>
+    <div class="sponsor">
+      <h2>Interested in sponsoring us?</h2>
+      <br />
+      <h3>Email us at nuwildhacks@gmail.com</h3>
+    </div>
   </body>
 </html>
