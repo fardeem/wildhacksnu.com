@@ -5,7 +5,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 h1 {
@@ -16,22 +17,30 @@ h1 {
 }
 
 .title {
-  text-shadow: 0 0 3px #fff, 0 0 6px rgb(216, 165, 216),
-    0 0 30px rgb(191, 150, 245);
+  text-shadow: 0 0 3px #fff, 0 0 10px rgb(216, 165, 216),
+    0 0 20px rgb(191, 150, 245);
 }
 
 .date {
   text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 3px #fff,
     0 0 6px rgb(165, 212, 216), 0 0 30px rgb(150, 236, 245);
 }
+.location {
+  text-align: center;
+  padding-top: 1em;
+}
 
 h2 {
   font-size: 2.5em;
   text-align: center;
   font-weight: bold;
+  margin-bottom: 1em;
 }
 h3 {
   font-size: 2em;
+  text-align: center;
+}
+h4 {
   text-align: center;
 }
 body {
@@ -44,16 +53,18 @@ body {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .header {
   display: block;
   padding-bottom: 5%;
   background: linear-gradient(103.48deg, #3d1e7b 22.97%, #000000 90.01%);
+  border-bottom: 4px solid white;
 }
 
-.about {
+.section {
   padding-top: 5%;
   display: block;
   padding-left: 10%;
@@ -61,14 +72,14 @@ p {
 }
 .navbar a {
   color: #fff;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 1.3em;
 }
 .navbar a:hover {
   color: #a395be;
 }
 
 .navbar {
-  padding-top: 2em;
   padding-bottom: 4em;
 }
 
@@ -84,4 +95,77 @@ p {
   justify-content: center;
   width: 25vw;
   padding: 15px;
+  border-radius: 15px;
+}
+
+.schedule-div {
+  background-color: white;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 1em;
+}
+.prizes {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prize-heading {
+  color: #faed7d;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  background-color: #180b2f;
+  color: white;
+}
+
+.active,
+.collapsible:hover {
+  opacity: 0.5;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.sponsorRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sponsorLogo {
+  justify-content: center;
+}
+
+#about,
+#schedule,
+#faq {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  border-bottom: 6px solid #5ed7d4;
+}
+
+#tracks,
+#prizes {
+  width: fit-content;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  border-bottom: 6px solid #a5a6f6;
 }
