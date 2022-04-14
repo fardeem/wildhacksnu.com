@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>WildHacks 2022</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -9,8 +13,13 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,187 +29,266 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
-  <body> 
-    
-   
-    <div class="header"> 
-      <nav class="navbar px-1">
-        <a class="navbar-brand" href="#"></a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#tracks">TRACKS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#schedule">SCHEDULE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#prizes">PRIZES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-       
-    </nav>
+  <body>
+    <div class="container-fluid header">
+      <nav class="navbar navbar-expand-lg px-1">
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracks">TRACKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">SCHEDULE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prizes">PRIZES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       <h1 class="title">WILDHACKS 2022</h1>
       <h3 class="date">SAT - SUN, MAY 28-29</h3>
       <h4 class="location">@ NU Norris Student Center</h4>
-      <h3 class="my-3" style="color:#FBC5FF"> > Registration will be released April 15!</h3>
-      <h4 class="my-3"> > Follow us on <a href="https://www.facebook.com/WildHacks2022" target="_blank" style="color:white">Facebook</a> & <a href="https://www.instagram.com/wildhacks2022/" target="_blank" style="color:white">Instagram</a></h4>
+      <h3 class="my-3" style="color: #fbc5ff">
+        > Registration will be released April 15!
+      </h3>
+      <h4 class="my-3">
+        > Follow us on
+        <a
+          href="https://www.facebook.com/WildHacks2022"
+          target="_blank"
+          style="color: white"
+          >Facebook</a
+        >
+        &
+        <a
+          href="https://www.instagram.com/wildhacks2022/"
+          target="_blank"
+          style="color: white"
+          >Instagram</a
+        >
+      </h4>
     </div>
-    
-    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
 
-    <div class="about section">
-      <h2 id = "about" >ABOUT.</h2>
-      <p>
-        WildHacks is Northwestern’s <span style="background-color:rgba(94, 215, 212, 0.8);
-        ">24-hour Hackathon taking place in-person from Saturday, May 28 to Sunday, May 29 2022.</span> As Northwestern’s largest hackathon, WildHacks is an opportunity for students to learn programming skills and develop a final project in a collaborative and inclusive environment. Through workshops, mentorship, and prizes, WildHacks aims to be an inclusive event that welcomes students of all skill levels, majors, and backgrounds
-      </p>
-      
-      <br />
-    </div>
-    <div>
-      <h2 id="tracks">TRACKS.</h2>
-      <div class="trackRow">
-        <div class="trackDiv">
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-offset="0"
+      tabindex="0"
+    >
+      <div class="about section">
+        <h2 id="about">ABOUT.</h2>
+        <p>
+          WildHacks is Northwestern’s
+          <span style="background-color: rgba(94, 215, 212, 0.8)"
+            >24-hour Hackathon taking place in-person from Saturday, May 28 to
+            Sunday, May 29 2022.</span
+          >
+          As Northwestern’s largest hackathon, WildHacks is an opportunity for
+          students to learn programming skills and develop a final project in a
+          collaborative and inclusive environment. Through workshops,
+          mentorship, and prizes, WildHacks aims to be an inclusive event that
+          welcomes students of all skill levels, majors, and backgrounds
+        </p>
+
+        <br />
+      </div>
+      <div class="container-fluid">
+        <h2 id="tracks">TRACKS.</h2>
+
+        <div class="row trackRow">
+          <div class="col-sm-12 col-md-4 trackDiv">
             <h3>Track 1: Life Hacks</h3>
-            <p>From the Farmer’s Fridges in Main that provide convenient & healthy snacks, to RockBot which lets you choose the music in Norris, life hack projects should optimize different aspects of our lives to make them more easy, fun and/or accessible.            </p>
+            <p>
+              From the Farmer’s Fridges in Main that provide convenient &
+              healthy snacks, to using RockBot in Norris to choose the music,
+              life hack projects should optimize different aspects of our lives
+              to make them more easy, fun and/or accessible.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 trackDiv">
+            <h3>Track 2: Social Good</h3>
+            <p>
+              Projects in the social good category aim to make the world a
+              better place through community-focused applications of technology.
+              Social good projects can focus on (but are not limited to) topics
+              such as accessibility, sustainability, and education.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4 trackDiv">
+            <h3>Track 3: Health</h3>
+            <p>
+              Given how much COVID-19 has shaped the past few years, healthcare
+              has become a pressing issue. Healthcare projects can focus on
+              addressing public health challenges (ex: COVID-19 pandemic,
+              food/drug safety, health literacy, etc) or personal health and
+              wellness issues (ex: mental health, fitness, etc).
+            </p>
+          </div>
         </div>
-        <div class="trackDiv">
-          <h3>Track 2: Social Good</h3>
-          <p>Projects in the social good category aim to make the world a better place through community-focused applications of technology. Social good projects can focus on  (but are not limited to) topics such as accessibility, sustainability, and education.
+        <br />
+      </div>
 
+      <div>
+        <h2 id="schedule">SCHEDULE.</h2>
+        <div class="schedule-div">
+          <h3>Day 1 - May 28</h3>
+          <p>11 am: Kick-off</p>
+          <p>12 pm - 11 pm: Hacking time! (+ lunch & dinner)</p>
+
+          <h3>Day 2 - May 29</h3>
+          <p>11 am: Brunch</p>
+          <p style="font-weight: 800">2 pm: HACKING ENDS!</p>
+          <p>2 pm - 5 pm: Fun + social event! (+ snack)</p>
+          <p>5 pm: Announcing prize winners + closing ceremony</p>
+        </div>
+      </div>
+
+      <div class="prizes section">
+        <h2 id="prizes">PRIZES.</h2>
+        <h3 class="prize-heading">
+          🏆<span style="font-weight: bold"> Grand prize </span>for each track:
+          $400 🏆
+        </h3>
+        <div class="additionalPrize">
+          <h3>> Additional prizes:</h3>
+
+          <ul class="mx-2">
+            <li>
+              <p>Best Design: $160</p>
+            </li>
+            <li>
+              <p>Best Technology: $160</p>
+            </li>
+            <li>
+              <p>Best Pitch: $160</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq section">
+        <h2 id="faq">FAQ.</h2>
+        <button type="button" class="collapsible">> What is WildHacks?</button>
+        <div class="content">
+          <p>
+            WildHacks is a weekend-long event where students work together to
+            create cool apps or software projects!
           </p>
         </div>
-        <div class="trackDiv">
-          <h3>Track 3: Health</h3>
-          <p>Given how much COVID-19 has shaped the past few years, healthcare has become a pressing issue. Healthcare projects can focus on addressing public health challenges (ex: COVID-19 pandemic, food/drug safety, health literacy, etc) or personal health and wellness issues (ex: mental health, fitness, etc). 
+        <button type="button" class="collapsible">> Who can come?</button>
+        <div class="content">
+          <p>
+            Northwestern students of all experience levels and majors are
+            welcome!
           </p>
         </div>
-      </div>
-      <br />
-    </div>
-
-    <div>
-      <h2 id="schedule">SCHEDULE.</h2>
-      <div class="schedule-div">
-        <h3>Day 1 - May 28 </h3>
-        <p>11 am: Kick-off</p>
-        <p >12 pm - 11 pm: Hacking time! (+ lunch & dinner)</p>
-
-        <h3>Day 2 - May 29</h3>
-        <p>11 am: Brunch</p>
-        <p style="font-weight:800">2 pm: HACKING ENDS!</p>
-        <p>2 pm - 5 pm: Fun + social event! (+ snack) </p> 
-        <p>5 pm: Announcing prize winners + closing ceremony</p>
-
-      </div>
-    </div>
-    
-    <div class="prizes section">
-      <h2 id="prizes">PRIZES.</h2>
-      <h3 class="prize-heading">
-        🏆<span style="font-weight:bold"> Grand prize </span>for each track: $400 🏆
-      </h3>
-      <div class="additionalPrize">
-      <h3>
-        > Additional prizes:
-      </h3>
-
-     
-      <ul class="mx-2">
-        <li>
+        <button type="button" class="collapsible">> What can I build?</button>
+        <div class="content">
           <p>
-            Best Design: $160
+            Anything you can imagine that relates to the 3 tracks! The official
+            judging rubric will be released during kickoff.
           </p>
-        </li>
-        <li>
+        </div>
+        <button type="button" class="collapsible">
+          > What if I've never coded before?
+        </button>
+        <div class="content">
           <p>
-            Best Technology: $160
+            Don’t worry! WildHacks is open to students of all experience levels!
+            We’ll send out resources with beginner friendly tutorials, and have
+            mentors and a Slack channel where you can ask questions.
           </p>
-        </li>
-        <li>
+        </div>
+        <button type="button" class="collapsible">
+          > How will tracks and prizes work?
+        </button>
+        <div class="content">
           <p>
-            Best Pitch: $160
+            You can submit your project to ONE track: Life Hacks, Social Good,
+            or Health, to be eligible for the grand prize of the track. There
+            are additional prizes that are not track-specific, open to
+            submissions that do not win the grand prizes.
           </p>
-        </li>
-        
-      </ul></div>
-      
-    </div>
+        </div>
+        <button type="button" class="collapsible">> How do teams work?</button>
+        <div class="content">
+          <p>
+            You can have teams of up to 4 people, and select teammates when you
+            register or form them during the start of the event.
+          </p>
+        </div>
+        <button type="button" class="collapsible">
+          > What if I don't have a team or idea?
+        </button>
+        <div class="content">
+          <p>
+            We’ll have events during the start of the Hackathon to form teams,
+            and make sure you find a group to work with!
+          </p>
+        </div>
+        <button type="button" class="collapsible">> What does it cost?</button>
+        <div class="content">
+          <p>
+            Attending WildHacks is 100% free, and we’ll provide meals and swag!
+          </p>
+        </div>
+        <button type="button" class="collapsible">
+          > I have a question that wasn't listed.
+        </button>
+        <div class="content">
+          <p>Email us at nuwildhacks@gmail.com!</p>
+        </div>
+      </div>
 
-    <div class="faq section">
-      <h2 id="faq">FAQ.</h2>
-      <button type="button" class="collapsible"> > What is WildHacks?</button>
-      <div class="content">
-        <p>WildHacks is a weekend-long event where students work together to create cool apps or software projects!</p>
-      </div>
-      <button type="button" class="collapsible"> > Who can come?</button>
-      <div class="content">
-        <p> Northwestern students of all experience levels and majors are welcome!</p>
-      </div>
-      <button type="button" class="collapsible"> > What can I build?</button>
-      <div class="content">
-        <p>Anything you can imagine that relates to the 3 tracks! The official judging rubric will be released during kickoff.</p>
-      </div>
-      <button type="button" class="collapsible"> > What if I've never coded before?</button>
-      <div class="content">
-        <p>Don’t worry! WildHacks is open to students of all experience levels! We’ll send out resources with beginner friendly tutorials, and have mentors and a Slack channel where you can ask questions.</p>
-      </div>
-      <button type="button" class="collapsible"> > How will tracks and prizes work?</button>
-      <div class="content">
-        <p>You can submit your project to ONE track: Life Hacks, Social Good, or Health, to be eligible for the grand prize of the track. There are additional prizes that are not track-specific and open to all projects.</p>
-      </div>
-      <button type="button" class="collapsible"> > How do teams work?</button>
-      <div class="content">
-        <p>You can have teams of up to 4 people, and select teammates when you register or form them during the start of the event.</p>
-      </div>
-      <button type="button" class="collapsible"> > What if I don't have a team or idea?</button>
-      <div class="content">
-        <p>We’ll have events during the start of the Hackathon to form teams, and make sure you find a group to work with!</p>
-      </div>
-      <button type="button" class="collapsible"> > What does it cost?</button>
-      <div class="content">
-        <p>Attending WildHacks is 100% free, and we’ll provide meals and swag!</p>
-      </div>
-      <button type="button" class="collapsible"> > I have a question that wasn't listed.</button>
-      <div class="content">
-        <p>Email us at nuwildhacks@gmail.com!</p>
-      </div>
-    </div>
+      <div class="container-fluid sponsor section pb-5">
+        <h2 style="color: #fbc5ff">Thanks to our sponsors!</h2>
 
-    <div class="sponsor section">
-      <h2 style="color:#FBC5FF">Thanks to our sponsors to make WildHacks happen!</h2>
-      
-      <h4>Interested in sponsoring us? Email us at nuwildhacks@gmail.com</h4>
-      <br/>
-      <div class="sponsorRow">
-        <img class="sponsorLogo" src="sponsorLogo/CS.png">
-        <img class="sponsorLogo garage" src="sponsorLogo/garage.png">
-        <img class="sponsorLogo" src="sponsorLogo/farley.png">
-
+        <h4>Interested in sponsoring us? Email us at nuwildhacks@gmail.com</h4>
+        <br />
+        <div class="sponsorRow row">
+          <div class="col-sm-12 col-md-4">
+            <img class="sponsorLogo" src="sponsorLogo/CS.png" />
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img class="sponsorLogo garage" src="sponsorLogo/garage.png" />
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img class="sponsorLogo" src="sponsorLogo/farley.png" />
+          </div>
+        </div>
       </div>
-      
-    </div>
     </div>
   </body>
 </html>
 
-
-
 <script>
   var coll = document.getElementsByClassName("collapsible");
   var i;
-  
+
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
       if (content.style.display === "block") {
@@ -210,4 +298,4 @@
       }
     });
   }
-  </script>
+</script>

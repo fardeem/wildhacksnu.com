@@ -80,13 +80,17 @@ p {
   color: #a395be;
 }
 
+.navbar-toggler {
+  color: transparent;
+}
+
 .navbar {
   padding-bottom: 4em;
 }
-
 .trackRow {
   display: flex;
   justify-content: space-evenly;
+  padding: 5%;
 }
 
 .trackDiv {
@@ -94,9 +98,9 @@ p {
   color: black;
   text-align: center;
   justify-content: center;
-  width: 25vw;
-  padding: 15px;
   border-radius: 15px;
+  padding: 15px;
+  width: 30%;
 }
 
 .schedule-div {
@@ -153,14 +157,16 @@ p {
   overflow: hidden;
   margin-left: 20px;
 }
-
 .sponsorRow {
   display: flex;
   justify-content: space-evenly;
+
+  align-items: center;
 }
 
 .sponsorLogo {
-  justify-content: center;
+  display: block;
+  margin: auto;
 }
 
 #about,
@@ -183,11 +189,18 @@ p {
 }
 
 img {
-  height: 150px;
-  width: auto;
+  width: 60%;
 }
 
-.garage {
-  width: 200px;
-  height: 200px;
+@media (min-width: 300px) and (max-width: 992px) {
+  .trackDiv {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .schedule-div {
+    width: 90%;
+  }
+  .navbar {
+    padding-bottom: 0;
+  }
 }
