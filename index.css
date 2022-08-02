@@ -4,44 +4,22 @@ body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
+h1,
 h2,
 h3,
 h4 {
   margin: 0;
+  text-align: center;
 }
 h1 {
   font-size: 8vw;
   font-weight: bold;
-  text-align: center;
   color: #fff;
 }
-
-.title {
-  text-shadow: 0 0 3px #fff, 0 0 10px rgb(216, 165, 216),
-    0 0 20px rgb(191, 150, 245);
-}
-
-.date {
-  text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 3px #fff,
-    0 0 6px rgb(165, 212, 216), 0 0 30px rgb(150, 236, 245);
-}
-.location {
-  text-align: center;
-  padding-top: 1em;
-}
-
 h2 {
-  font-size: 2.5em;
-  text-align: center;
   font-weight: bold;
   margin-bottom: 1em;
-}
-h3 {
   font-size: 2em;
-  text-align: center;
-}
-h4 {
-  text-align: center;
 }
 body {
   background-color: #180b2f;
@@ -56,14 +34,6 @@ p {
   font-size: 1.2em;
   font-weight: 400;
 }
-
-.header {
-  display: block;
-  padding-bottom: 5%;
-  background: linear-gradient(103.48deg, #3d1e7b 22.97%, #000000 90.01%);
-  border-bottom: 4px solid white;
-}
-
 .section {
   margin-top: 20px;
   padding-top: 5%;
@@ -87,7 +57,15 @@ p {
 .navbar {
   padding-bottom: 4em;
 }
-
+.register {
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  font-size: 1.5em;
+}
 .register:hover {
   text-shadow: 0 0 1px #fff, 0 0 2px rgb(248, 248, 248),
     0 0 2px rgb(56, 21, 103);
@@ -207,5 +185,8 @@ img {
   }
   .navbar {
     padding-bottom: 0;
+  }
+  h1 {
+    font-size: 2.5em;
   }
 }
